@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=23;{
+            let a=123;
+            console.log(a);
+        }
+        console.log(a);
+
+        const b= "constant cannot be changed";
+        console.log(b);
+
+        let age=18;
+        if (age>=18) {
+            console.log('he can drink cold drinks');
+        }
+        else if (age<18) {
+            console.log('he cannot drink cold drinks');
+        }
+        else{
+            console.log('age is less than 18');
+        }
+
+        const students=20;
+        switch (students) {
+            case 9:
+                console.log("there are 9 students");
+                break;
+            case 20:
+                console.log("there are 20 students");
+                break;
+            case 43:
+                console.log("there are 43 students");
+                break;    
+            default:
+                console.log("none")
+                break;
+        }
+
+        let employee={
+            name:"Asad",
+            salary:100000,
+            age:43
+        }
+        console.log(employee.name);
+        console.log(employee.salary);
+        console.log(employee.age);
+
+        let names=[43,32,"Asad"];
+        names=names.sort(); 
+        names.push("this is push")
+        console.log(names);
+        console.log(names[0]);
+        console.log(names.length);
+
+        function greet(name,text,clas){
+            console.log(name+text+clas)
+        }
+        let name="Harry\t";
+        let name1="Simon\t";
+        let name2="Hadi\t";
+        let text="study in\t";
+        let clas="class 9th"
+        greet(name,text,clas);
+        greet(name1,text,clas);
+        greet(name2,text,clas);
+        
+        alert('pay the fee');
+
+        let see=prompt("what is your date of birt");
+        if (see<=2003) {
+            console.log('you are allowed');
+        }
+        else{
+            console.log('you are not allowed');
+        }
+
+        let saw=confirm('do you really want to delete');
+        if (saw) {
+            console.log('deleted') 
+        }
+        else[
+            console.log('not deleted')
+        ]
+        
+
+
+    </script>
+</body>
+</html>
