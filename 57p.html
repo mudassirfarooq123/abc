@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #btn{
+            padding: 15px;
+            background-color: aquamarine;
+            color: blue;
+            border: 2px solid darkblue;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="">
+        <h1>this is heading</h1>
+        <p id="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam id repudiandae enim. Culpa fugit eos, vero alias nobis iste maxime sunt soluta recusandae, tempore, odit dolore placeat. Quasi, consequatur! Cumque reprehenderit reiciendis velit. Fuga, vel? Cum vitae eveniet blanditiis quisquam soluta molestiae perferendis, non provident exercitationem! Asperiores quisquam ea facilis explicabo provident aperiam magnam iste dolorum. Esse, iure praesentium et doloremque reiciendis voluptates beatae a nemo totam aspernatur quis hic quaerat iusto enim, maiores dolor nam nisi laborum. Explicabo, ipsam dicta vero, dolore laudantium hic facere eaque eligendi suscipit, praesentium quas illum nostrum? Porro nostrum, eos veritatis tenetur nobis voluptates. Repellendus molestiae iste quam, dolorum accusamus maiores enim, laudantium hic corporis ipsum tenetur! Sed voluptate, maxime, doloremque illo blanditiis facilis earum voluptates rerum fuga, in veritatis mollitia odit dolores nam porro debitis atque ea tempora distinctio. Necessitatibus exercitationem totam maxime consectetur explicabo, ducimus nostrum minus? Recusandae accusamus earum debitis, itaque possimus fugiat aliquid iure laudantium assumenda optio suscipit culpa omnis necessitatibus soluta praesentium dolore vero sit molestias non aut? Perspiciatis vitae quod excepturi qui minus, nulla incidunt, minima eos rerum provident illum tenetur dolorem quas consequatur delectus facere dolorum. Ut deserunt, eos ex vero repudiandae earum ab quam sint reprehenderit esse debitis maiores accusantium! Itaque similique asperiores, ipsum recusandae unde deserunt? Cumque blanditiis officia ducimus. Aliquid consequatur ab veniam minus. Vel, nostrum nihil.</p>
+    </div>
+    <button id="btn" onclick="toggleHide()">
+        Show/Down
+    </button>
+    <script>
+        let para=document.getElementById('para');
+        para.addEventListener('mouseover',function run(){
+            console.log('mouse inside')
+        });
+        para=document.getElementById('para');
+        para.addEventListener('mouseout',function run(){
+            console.log('mouse outside')
+        });
+
+        function toggleHide(){
+        let btn=document.getElementById('btn');
+        let para=document.getElementById('para');
+        if (para.style.display !='none') {
+            para.style.display='none'
+        }
+        else{
+            para.style.display='block'
+        }
+    }
+    </script>
+</body>
+</html>
