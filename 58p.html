@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="time">
+        time now
+    </div>
+    <script>
+        function greet(name){
+            console.log('hello good morning'+ name);
+        }
+
+        //setTimeout
+
+        setTimeout(greet,2000,"Asad");
+        // timeOut = setTimeout(greet,2000,"Asad");
+        // console.log(timeOut);
+        // clearTimeout(timeOut);
+
+        setInterval(greet,2000,"Asad");
+        // intervalId = setInterval(greet,2000,"Asad");
+        // console.log(intervalId);
+        // clearInterval(intervalId);
+
+        function time(){
+            time = new Date;
+            console.log(time);
+            document.getElementById('time').innerHTML=time;
+
+        }
+        setInterval(time,1000);
+        
+
+
+
+    </script>
+</body>
+</html>
