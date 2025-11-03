@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: antiquewhite;
+            border: 2px solid gray;
+            padding: 20px;
+            margin: 3px;
+            font-size: 15px;
+            text-align: center;
+        }
+        #time{
+            font-weight: bold;
+        
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        Time is <span id="time"></span>
+    </div>
+    <script>
+        let now = new Date();
+        console.log(now);
+
+        let dat = new Date(0);
+        console.log(dat);
+
+        // let newdate = new Date("2019-09-30")
+        // console.log(newdate);
+
+        // let newdate = new Date(year, month,date,hours,mintutes,seconds,milliseconds);
+        let newdate = new Date(2025, 10 ,3,21,40,10,32)
+        console.log(newdate);
+
+        let yr = newdate.getFullYear();
+        console.log("the year is ",yr);
+        let dt = newdate.getDate();
+        console.log("the date is ",dt);
+        let month = newdate.getMonth();
+        console.log("the month is ",month)
+        let hours = newdate.getHours();
+        console.log("the hours is ",hours);
+        let min = newdate.getMinutes();
+        console.log("the min is ",min);
+        let milli = newdate.getMilliseconds();
+        console.log("the milli is ",milli);
+
+        newdate.setDate(5);
+        console.log(newdate);
+
+        setInterval(ut,1000)
+
+        function ut(){
+            time.innerHTML = new Date;
+        }
+
+
+    </script>
+</body>
+</html>
