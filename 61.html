@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let greet = () => console.log("HI Guys");
+        greet();
+
+        let sum = (a,b)=>console.log(a+b);
+        let half = a=>console.log(a/2);
+
+        setInterval(()=>{
+            console.log('Good Morning');
+        },4000);
+
+        let obj ={
+            see:'How are you?',
+            names:['Shoib','Imran Khan','Babar'],
+            speak(){
+                this.names.forEach((cricketer) => {
+                     console.log(this.see + cricketer)                    
+                });
+            }
+        }
+        obj.speak();
+    </script>
+</body>
+</html>
