@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+<body>
+    <h1>HELLO</h1>
+    <script>
+        let a = {
+            name: "Harry",
+            class: 9,
+            subject: "Computer Science"
+        }
+        console.log(a);
+
+        let b = JSON.stringify(a);
+        console.log(b);
+
+        b = b.replace(9,10);
+        console.log(b);
+
+        b = JSON.parse(b);
+        console.log(b);
+    </script>
+</body>
+</html>
